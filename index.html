@@ -1,48 +1,59 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>form</title>
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1>Form Perokok</h1>
+      <p>form ini untuk mendata siapa yang perokok dan yang tidak perokok
+      <p>* Menunjukkan pertanyaan yang wajib diisi</p>
+      </p>
+    </div>
     <form action="form.html">
-      <div>
+      <div class="nama required">
         <label for="nama">Siapa nama anda?</label><br>
         <input type="text" name="nama" id="nama" required />
       </div>
-      <div>
+      <div class="umur required">
         <label for="umur">Berapa umur anda?</label><br>
         <input type="number" name="umur" id="umur" required />
       </div>
 
-      <div>
+      <div class="kelamin">
         <label for="kelamin1">Apa jenis kelamin anda?</label><br>
-        <label><input type="radio" name="kelamin" value="L" id="kelamin1"/> Laki-laki</label>
-        <label><input type="radio" name="kelamin" value="P" id="kelamin2"/> Perempuan</label>
+        <label><input type="radio" name="kelamin" value="L" id="kelamin1" /> Laki-laki</label>
+        <label><input type="radio" name="kelamin" value="P" id="kelamin2" /> Perempuan</label>
       </div>
 
-      <div>
+      <div class="perokok">
         <label for="perokok1">Apakah anda perokok?</label><br>
         <label><input type="radio" name="perokok" value="yes" id="perokok1" /> Ya</label>
         <label><input type="radio" name="perokok" value="no" id="perokok2" /> Tidak</label>
       </div>
 
-      <div>
+      <div class="cbperokok">
         <label for="cbperokok1">Jika anda perokok, rokok apa yang anda pernah coba?</label><br>
         <label><input type="checkbox" value="ggf" id="cbperokok1" /> Gudang Garam Filter</label><br>
         <label><input type="checkbox" value="ls" id="cbperokok2" /> Lucky Strike</label><br>
         <label><input type="checkbox" value="m" id="cbperokok3" /> Marlboro</label><br>
         <label><input type="checkbox" value="ggf" id="cbperokok4" /> Esse</label><br>
       </div>
-      <div>
+      <div class="btn">
         <input type="submit" value="submit">
         <input type="reset" value="reset">
       </div>
     </form>
     <br>
     <div>
-         <button><a href="./form.html"> &rarr; Check Data</a></button>
+      <button><a href="./form.html"> &rarr; Check Data</a></button>
     </div>
-  </body>
+  </div>
+
+</body>
+
 </html>
