@@ -1,58 +1,79 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css">
-  <title>form</title>
-</head>
-<body>
-  <div class="container">
-    <div class="card-title">
-      <h1>Form Perokok</h1>
-      <p>form ini untuk mendata siapa yang perokok dan yang tidak perokok
-      <p class="required">* Menunjukkan pertanyaan yang wajib diisi</p>
-    </div>
-    <form action="form.html">
-      <div class="card required">
-        <label for="nama">Siapa nama anda?</label><br>
-        <input type="text" name="nama" id="nama" placeholder="Jawaban Anda" required />
-      </div>
-      <div class="card required">
-        <label for="umur">Berapa umur anda?</label><br>
-        <input type="number" name="umur" id="umur" placeholder="Jawaban Anda"  />
-      </div>
 
-      <div class="card">
-        <label for="kelamin1">Apa jenis kelamin anda?</label>
-        <div><label><input type="radio" name="kelamin" value="L" id="kelamin1" /> Laki-laki</label></div>
-        <div><label><input type="radio" name="kelamin" value="P" id="kelamin2" /> Perempuan</label></div>
-      </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Form Perokok</title>
+    </head>
 
-      <div class="card">
-        <label for="perokok1">Apakah anda perokok?</label>
-        <div><label><input type="radio" name="perokok" value="yes" id="perokok1" /> Ya</label></div>
-        <div><label><input type="radio" name="perokok" value="no" id="perokok2" /> Tidak</label></div>
-      </div>
+    <body>
+        <main class="container">
+            <section class="card-title">
+                <h1>Form Perokok</h1>
+                <p>Form ini untuk mendata siapa yang perokok dan yang tidak perokok.</p>
+                <p class="required">* Menunjukkan pertanyaan yang wajib diisi</p>
+            </section>
 
-      <div class="card">
-        <label for="cbperokok1">Jika anda perokok, rokok apa yang anda pernah coba?</label>
-        <div><label><input type="checkbox" value="ggf" id="cbperokok1" /> Gudang Garam Filter</label></div>
-        <div><label><input type="checkbox" value="ls" id="cbperokok2" /> Lucky Strike</label></div>
-        <div><label><input type="checkbox" value="m" id="cbperokok3" /> Marlboro</label></div>
-        <div><label><input type="checkbox" value="ggf" id="cbperokok4" /> Esse</label></div>
-      </div>
-    </form>
-    <div class="btn">
-      <input type="submit" value="submit">
-      <input type="reset" value="reset">
-    </div>
-    
-    <div>
-      <button><a href="./form.html"> &rarr; Check Data</a></button>
-    </div>
-  </div>
+            <form id="formPerokok">
+                <div class="card required">
+                    <label for="nama">Siapa nama Anda?</label>
+                    <input type="text" name="nama" id="nama" placeholder="Jawaban Anda" required>
+                </div>
 
-</body>
+                <div class="card required">
+                    <label for="umur">Berapa umur Anda?</label>
+                    <input type="number" name="umur" id="umur" placeholder="Jawaban Anda" required>
+                </div>
+
+                <div class="card required">
+                    <p class="question">Apa jenis kelamin Anda?</p>
+                    <div>
+                        <label><input type="radio" name="kelamin" value="Laki-laki" required> Laki-laki</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="kelamin" value="Perempuan"> Perempuan</label>
+                    </div>
+                </div>
+
+                <div class="card required">
+                    <p class="question">Apakah Anda perokok?</p>
+                    <div>
+                        <label><input type="radio" name="perokok" value="Ya" required> Ya</label>
+                    </div>
+                    <div>
+                        <label><input type="radio" name="perokok" value="Tidak"> Tidak</label>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <p class="question">Jika Anda perokok, rokok apa yang pernah Anda coba?</p>
+                    <div>
+                        <label><input type="checkbox" name="rokok" value="Gudang Garam Filter"> Gudang Garam Filter</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="rokok" value="Lucky Strike"> Lucky Strike</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="rokok" value="Marlboro"> Marlboro</label>
+                    </div>
+                    <div>
+                        <label><input type="checkbox" name="rokok" value="Esse"> Esse</label>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+
+            <div class="check-data">
+                <a href="form.html">→ Check Data</a>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
 
 </html>
